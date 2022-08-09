@@ -1,0 +1,12 @@
+<h1><%= application_name() %></h1>
+<h2>Seja Bem-Vindo ao curso de <%=@curso%>, <%= @meu_nome %></h2>
+<p><strong>Você está em ambiente de <%= ambiente_rails %></strong></p>
+<p><strong>Data: </strong><%= data_br(Date.today) %></p>
+
+<%=render "menu"%>
+
+<ul>
+    <li> 
+        <%= link_to "Cadastro de Moedas", coins_path %> 
+    </li>
+</ul>
